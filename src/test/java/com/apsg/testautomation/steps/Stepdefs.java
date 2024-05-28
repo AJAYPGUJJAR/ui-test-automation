@@ -1,6 +1,6 @@
 package com.apsg.testautomation.steps;
 
-import com.apsg.testautomation.support.action.CheckTitle;
+import com.apsg.testautomation.support.check.CheckTitle;
 import com.apsg.testautomation.support.action.OpenWebsite;
 import com.apsg.testautomation.support.action.PressButton;
 import com.apsg.testautomation.support.action.SetInputField;
@@ -24,7 +24,7 @@ public class Stepdefs {
 
     @AfterAll
     public static void tearDown() {
-//        driver.quit();
+        driver.quit();
     }
 
     @Given("I open the url {string}")
