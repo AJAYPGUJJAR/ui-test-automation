@@ -1,4 +1,4 @@
-package com.apsg.testautomation.steps;
+package com.apsg.testautomation.steps.wdio;
 
 import com.apsg.testautomation.support.check.CheckTitle;
 import io.cucumber.java.en.Then;
