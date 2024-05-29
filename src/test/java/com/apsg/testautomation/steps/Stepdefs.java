@@ -27,26 +27,4 @@ public class Stepdefs {
         driver.quit();
     }
 
-    @Given("I open the url {string}")
-    @Given("I open the site {string}")
-    public void iOpenTheUrl(String url) {
-        new OpenWebsite(url);
-    }
-
-    @When("I set {string} to the inputfield {string}")
-    public void iSetToTheInputfield(String value, String selector) {
-        new SetInputField().addInput(value, selector);
-
-    }
-
-    @And("I press {string}")
-    public void iPress(String key) {
-        new PressButton(key);
-    }
-
-    @Then("I expect that the title is {string}")
-    public void iExpectThatTheTitleIs(String value) {
-        new CheckTitle(value);
-    }
-
 }
