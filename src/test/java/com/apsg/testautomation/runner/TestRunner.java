@@ -6,7 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "com.apsg.testautomation.steps"
+        glue = "com.apsg.testautomation.steps",
+        plugin = "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
